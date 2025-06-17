@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #ffffff;
+
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#produto img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: white;
+}
+#carrossel-produtos {
+
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 40px 20px;
+        border-radius: 20px;
+        margin: 40px auto;
+        max-width: 90%;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        transition: background-color 0.3s ease;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2); /* fundo levemente escuro e translúcido */
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(4px); /* adiciona um leve blur se suportado */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.85; /* leve transparência nas imagens */
+    background-color: transparent;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #00f7ff;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
